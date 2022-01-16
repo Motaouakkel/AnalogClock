@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('Fonts/DS-DIGIT.TTF');
+  }
+#numbers text{
+    font-size: 10px;
+}
+#electronicClock{
+    width: 500px;
+    height: 70px;
+    background-color: black;
+    border-radius: 16px;
+    color: red;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'digital-7', sans-serif;
+    
+}
+
+
+

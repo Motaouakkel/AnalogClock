@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <title>AnalogClock</title>
+</head>
+<body>
+    <center>
+    <div id="electronicClock">
+        00:00:00 PM
+    </div>
+    
+    <svg id="handsClock" width="500" height="500" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle id="face" cx="50.00" cy="50.00" r="45" stroke="black" stroke-width="2" fill="white"/>
+        <g id="ticks">
+            
+            <!-- 12 --><line x1="50.00" y1="5.00" x2="50.00" y2="10.00" stroke="#f50" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(6,50,50)" stroke-width="0.3" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(12,50,50)" stroke-width="0.3" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(18,50,50)" stroke-width="0.3" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(24,50,50)" stroke-width="0.3" />
+                <!-- - --><line x1="50.00" y1="5.00" x2="50.00" y2="10.00" stroke="#f50" transform="rotate(30,50,50)" stroke-width="0.4" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(36,50,50)" stroke-width="0.3" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(41,50,50)" stroke-width="0.3" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(47,50,50)" stroke-width="0.3" />
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(53,50,50)" stroke-width="0.3" />
+                <!-- - --><line x1="50.00" y1="5.00" x2="50.00" y2="10.00" stroke="#f50" transform="rotate(60,50,50)" stroke-width="0.4"/>
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(66,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(71,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(77,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="5.00" x2="50.00" y2="8.00" stroke="#f50" transform="rotate(83,50,50)" stroke-width="0.3"/>
+
+            <!-- 3 --><line x1="95.00" y1="50.00" x2="90.00" y2="50.00" stroke="#f50" />
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(6,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(12,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(18,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(24,50,50)" stroke-width="0.3"/>
+                <!-- - --><line x1="95.00" y1="50.00" x2="90.00" y2="50.00" stroke="#f50" transform="rotate(30,50,50)" stroke-width="0.4"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(36,50,50)" stroke-width="0.3"/>  
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(41,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(47,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(53,50,50)" stroke-width="0.3"/>
+                <!-- - --><line x1="95.00" y1="50.00" x2="90.00" y2="50.00" stroke="#f50" transform="rotate(60,50,50)" stroke-width="0.4"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(66,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(71,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(77,50,50)" stroke-width="0.3"/>
+                                <line x1="95.00" y1="50.00" x2="92.00" y2="50.00" stroke="#f50" transform="rotate(83,50,50)" stroke-width="0.3"/>
+            
+
+            <!-- 6 --><line x1="50.00" y1="90.00" x2="50.00" y2="95.00" stroke="#f50" />
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(6,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(12,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(18,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(24,50,50)" stroke-width="0.3"/>
+                <!-- - --><line x1="50.00" y1="90.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(30,50,50)" stroke-width="0.4"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(36,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(41,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(47,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(53,50,50)" stroke-width="0.3"/>
+                <!-- - --><line x1="50.00" y1="90.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(60,50,50)" stroke-width="0.4"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(66,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(71,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(77,50,50)" stroke-width="0.3"/>
+                                <line x1="50.00" y1="92.00" x2="50.00" y2="95.00" stroke="#f50" transform="rotate(83,50,50)" stroke-width="0.3"/>
+            
+
+            <!-- 9 --><line x1="5.00" y1="50.00" x2="10.00" y2="50.00" stroke="#f50" />
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(6,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(12,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(18,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(24,50,50)" stroke-width="0.3"/>
+                <!-- - --><line x1="5.00" y1="50.00" x2="10.00" y2="50.00" stroke="#f50" transform="rotate(30,50,50)" stroke-width="0.4"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(36,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(41,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(47,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(53,50,50)" stroke-width="0.3"/>
+                <!-- - --><line x1="5.00" y1="50.00" x2="10.00" y2="50.00" stroke="#f50" transform="rotate(60,50,50)" stroke-width="0.4"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(66,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(71,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(77,50,50)" stroke-width="0.3"/>
+                                <line x1="5.00" y1="50.00" x2="8.00" y2="50.00" stroke="#f50" transform="rotate(83,50,50)" stroke-width="0.3"/>
+            
+        </g>
+        <g id="numbers">
+            <!-- up -->
+            <text x="45" y="17" fill="#f50">12</text>
+            <!-- bottom -->
+            <text x="47.50" y="89" fill="#f50">6</text>
+            <!-- left -->
+            <text x="11" y="53" fill="#f50">9</text>
+            <!-- right -->
+            <text x="85" y="53" fill="#f50">3</text>
+        </g>
+
+        <g id="hands">
+            <!-- Hours -->
+            <line id="hoursHand" transform="rotate(45,50,50)" x1="50.00" y1="50.00" x2="50.00" y2="24.00" stroke="black" stroke-width="2"/>
+            <!-- Minutes -->
+            <line id="minutesHand" transform="rotate(160,50,50)" x1="50.00" y1="50.00" x2="50.00" y2="20.00" stroke="black" stroke-width="1"/>
+            <!-- Seconds -->
+            <line id="secondsHand" transform="rotate(30,50,50)" x1="50.00" y1="50.00" x2="50.00" y2="16.00" stroke="red" stroke-width="0.5"/>
+            <line id="secondsHand_" transform="rotate(30,50,50)" x1="50.00" y1="50.00" x2="50.00" y2="45.00" stroke="red" stroke-width="0.5"/>
+            <!-- Center -->
+            <line x1="95.00"  y1="50.00" x2="90.00" y2="50.00" stroke="#f50" />
+        </g>
+        <circle id="face" cx="50.00" cy="50.00" r="2" stroke="black" stroke-width="1" fill="red"/>
+    </svg>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>
